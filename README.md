@@ -34,3 +34,28 @@ hashcode
 8. Создайте соединение между Jenkins и Гитом (ssh)
 9. Пусть после каждого коммита в мастер ветку на Git хаб Jenkins инсталит
 приложение на сервер (Tomcat)
+
+    Структура проекта
+   
+   src/main/java/
+├── com.example.app
+│   ├── controller
+│   │   └── UserServlet.java
+│   ├── dto
+│   │   ├── UserDTO.java
+│   │   └── RoleDTO.java
+│   ├── entity
+│   │   ├── User.java
+│   │   └── Role.java
+│   ├── mapper
+│   │   ├── UserMapper.java
+│   │   └── RoleMapper.java
+│   ├── repository
+│   │   ├── UserRepository.java
+│   │   └── RoleRepository.java
+│   └── service
+│       ├── UserService.java
+│       └── RoleService.java
+├── resources
+│   └── db.properties
+└── web.xml
